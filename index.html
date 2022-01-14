@@ -1,0 +1,45 @@
+<!---
+    Discount Calculator HTML File
+    author(Joshua Thomas)
+    date(13.01.2022)
+    version:1.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Discount Calculator</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="header-text1">Discount Calculator</h1>
+        <label for="enter Bill Amount" class="text-1">Enter Bill Amount: </label>
+        <input class="bill-amount" id="bill_amount" autocomplete="off" required=""><br>
+        
+        <label for="Select Discount (%)" class="text-2">Select Discount (%) </label>
+        <select class="select-dis" id="select_percentage" required="">
+            <option value="-percentage-">-percentage-</option>
+            <option value="10">10%</option>
+            <option value="25">25%</option>
+            <option value="40">40%</option>
+            <option value="80">80%</option>
+            <option value="100">100%</option>
+        </select><br>
+        
+        <label for="Discount Amount" class="text-3">Discount Amount: </label>
+        <input class="dis-amount" id="discount_amount" disabled="">
+        
+        <label for="Final Pay" class="text-4">Final Pay: </label>
+        <input class="final-amount" id="final_amount" disabled="">
+        
+        <button class="cal-btn" id="btn_1">Calculate</button>
+        <button class="reset-btn" id="btn_2">Reset</button>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
